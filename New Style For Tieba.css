@@ -1,0 +1,36 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tieba.baidu.com") {
+    .d_post_content {
+    line-height: 34px;
+    font-size: 24px;
+}
+    
+    .d_post_content_main{
+        width:1035px;
+        float:none;
+    }
+    
+    #j_core_title_wrap{
+        width:1035px;
+    }
+    
+    .tbui_aside_float_bar,
+    #j_core_title_wrap,
+    .core_title,
+    .right_section{
+        display:none !important;
+    }
+    
+    .wrap2,
+    .d_post_content_main,
+    .core_reply_wrapper{
+        background: url('http://d.pcs.baidu.com/thumbnail/17ccc34876cff231ef18ebdff58ad28e?fid=1846096254-250528-840301971376263&time=1401512400&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-LgftWPHGY9jA5JJk3GNOqjSoL7M%3D&expires=8h&prisign=RK9dhfZlTqV5TuwkO5ihMQzlM241kT2YfffnCZFTaEMUMBfcIUvWxZe3T3DvNsbcMKoU5v/JKZUmpAWJz7OVRyC909fweNecHyatJJyE/fx232pW9BdEEXBtrRUCrJk2HOV0gRi4YiYVTApgN+5RBRBchKi9xGnoP9SJG0Zz+S8=&chkv=0&chkbd=0&size=c10000_u10000&quality=100') scroll center top transparent !important;
+        
+        color:#989898 !important;
+    }
+    
+    .lzl_content_main{
+        color:#989898 !important;
+    }
+}
