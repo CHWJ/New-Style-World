@@ -1,0 +1,24 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url("http://www.cnblogs.com/") {
+    
+    #headline_block > ul:nth-child(1) > li { 
+        font-size:20px !important;
+    }
+    
+     div.w_r  > ul  > li { 
+        font-size:20px !important;
+    }
+    
+    #side_right {
+        width: 400px !important
+    }
+    
+    div.w_r  > ul {
+        width: 380px !important
+    }
+    
+    div.w_r:nth-child(1), div.w_r:nth-child(6),div.w_r:nth-child(9){
+        display:none
+    }
+}
