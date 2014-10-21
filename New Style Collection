@@ -1,0 +1,168 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix(http), url-prefix(https) {
+  /* 改变页面底色 */
+  body {
+      background-color: #AAAAAA;
+      color:#4B4B4B;
+  }
+}
+
+@-moz-document domain("book.douban.com") {
+    
+    /*文本字号*/
+    .review-text{
+        font-size: 25px !important;
+    }
+    
+    #wrapper {
+        width:90% !important;
+    }
+    .article{
+        width:75% !important;
+    }
+}
+
+@-moz-document domain("movie.douban.com") {    
+    /*文本字号*/
+    .main-bd {
+        font-size: 25px !important;
+    }
+    #wrapper {
+        width:90% !important;
+    }
+    .article{
+        width:75% !important;
+    }
+}
+
+@-moz-document url("http://www.cnblogs.com/") {
+    
+    #headline_block > ul:nth-child(1) > li {
+        font-size:20px !important;
+    }
+    
+     div.w_r > ul > li {
+        font-size:20px !important;
+    }
+    
+    #side_right {
+        width: 400px !important
+    }
+    
+    div.w_r > ul {
+        width: 380px !important
+    }
+    
+    div.w_r:nth-child(1), div.w_r:nth-child(6),div.w_r:nth-child(9){
+        display:none
+    }
+}
+
+@-moz-document domain("weibo.com") {
+    
+    /*微博文本*/
+    .WB_text {
+        font-size:22px !important;
+        line-height:28px !important;
+    }
+}
+
+@-moz-document domain("tianya.cn") {
+    
+    /*字号*/
+    .bbs-content {
+        font-size:24px !important;
+    }
+    
+    /*页面宽度*/
+    #doc {
+        width:1366px !important;
+    }
+}
+
+@-moz-document domain("tingtaoge.com") {
+    body,.plc,.pls {
+        background-color:#93B468 !important;
+    }
+    
+    /*帖子字体大小*/
+    .t_f{
+        font-size:30px !important;
+    }
+}
+
+@-moz-document domain("zhihu.com") {
+
+    .zu-main.zg-wrap{
+        width:1440px !important;
+    }
+    
+    body{
+        font-size:25px !important;
+    }
+    
+    /*标题*/
+    .question_link {
+        font-size:25px !important;
+    }
+}
+
+@-moz-document domain("book.zongheng.com") {
+    div.content p{
+        font-size:30px !important;
+    }
+}
+
+
+@-moz-document domain("v2ex.com") {
+    .reply_content, .topic_content {
+        font-size: 25px !important;
+    }
+}
+
+@-moz-document domain("bbs.dospy.com") {
+    /*链接标题*/
+    .f_title {
+        font-size: 20px !important;
+    }
+    /*帖子内容*/
+    .t_msgfont,font {
+        font-size: 25px !important;
+    }    
+}
+
+
+@-moz-document domain("tieba.baidu.com") {
+    /*背景颜色*/
+    .wrap1,.wrap2 {
+    background:none #AAA !important;
+}
+    
+    .d_post_content {
+    line-height: 34px;
+    font-size: 24px;
+}
+    
+    .d_post_content_main{
+        width:1035px;
+        float:none;
+    }
+    
+    #j_core_title_wrap{
+        width:1035px;
+    }
+    
+    .tbui_aside_float_bar,
+    #j_core_title_wrap,
+    .core_title,
+    .right_section{
+        display:none !important;
+    }
+    
+    
+    .lzl_content_main{
+        color:#989898 !important;
+    }
+}
+
