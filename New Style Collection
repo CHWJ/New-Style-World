@@ -1,12 +1,20 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
+@-moz-document domain("bbs.ngacn.cc") {
+  .postcontent{
+    font-size:25px !important;
+  }
+}
+
+/*
 @-moz-document url-prefix(http), url-prefix(https) {
-  /* 改变页面底色 */
+  /* 改变页面底色 
   body {
       background-color: #AAAAAA;
       color:#4B4B4B;
   }
 }
+*/
 
 @-moz-document domain("book.douban.com") {
     
@@ -56,6 +64,34 @@
     
     div.w_r:nth-child(1), div.w_r:nth-child(6),div.w_r:nth-child(9){
         display:none
+    }
+}
+
+@-moz-document domain("cnblogs.com") {
+    /*某些文章的内容字体*/
+    .MainCell{
+        font-size:25px !important;
+    }
+    /*某些文章的内容字体*/
+    /*#cnblogs_post_body p span{
+        font-size:25px !important;
+    }
+    */
+    #cnblogs_post_body h2,
+    #cnblogs_post_body p,
+    #cnblogs_post_body code {
+        font-size:25px !important;
+    }
+    .cnblogs_code pre,.cnblogs_code span {
+        font-size:16px !important;
+    }
+    
+    /*文章宽度*/
+    #topicList{
+        width:1280px !important;
+    }
+    center{
+        margin-left:-550px !important;
     }
 }
 
