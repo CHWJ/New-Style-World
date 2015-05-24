@@ -53,6 +53,7 @@
      div.w_r > ul > li {
         font-size:20px !important;
     }
+
     
     #side_right {
         width: 400px !important
@@ -73,13 +74,11 @@
         font-size:25px !important;
     }
     /*某些文章的内容字体*/
-    /*#cnblogs_post_body p span{
+    #cnblogs_post_body p span{
         font-size:25px !important;
     }
-    */
-    #cnblogs_post_body h2,
-    #cnblogs_post_body p,
-    #cnblogs_post_body code {
+        
+    #cnblogs_post_body p {
         font-size:25px !important;
     }
     .cnblogs_code pre,.cnblogs_code span {
@@ -92,6 +91,24 @@
     }
     center{
         margin-left:-550px !important;
+    }
+}
+
+@-moz-document domain("msdn.microsoft.com") {
+    #JelloExpander{
+        min-width: 1666px !important;
+        margin-left: -800px;
+    }
+    .MagazineStyle p{
+        font-size:22px !important;
+        line-height:28px !important;
+    }
+    .MagazineStyle ul li{
+        font-weight: bold;
+        font-size:22px !important;        
+        font-style: italic;
+        color: #455481;
+        line-height:28px !important;
     }
 }
 
@@ -201,4 +218,3 @@
         color:#989898 !important;
     }
 }
-
