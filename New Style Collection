@@ -1,20 +1,23 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
+/*
+@-moz-document url-prefix(http), url-prefix(https) {
+  /*改变页面底色
+  body {
+      background-color: #3F3F3F;
+      color: #999 !important;
+  }
+    a:link{
+        color:#4094C7 !important;
+    }
+}
+*/
+
 @-moz-document domain("bbs.ngacn.cc") {
   .postcontent{
     font-size:25px !important;
   }
 }
-
-/*
-@-moz-document url-prefix(http), url-prefix(https) {
-  /* 改变页面底色 
-  body {
-      background-color: #AAAAAA;
-      color:#4B4B4B;
-  }
-}
-*/
 
 @-moz-document domain("book.douban.com") {
     
@@ -216,5 +219,17 @@
     
     .lzl_content_main{
         color:#989898 !important;
+    }
+}
+
+@-moz-document domain("jianshu.com")
+{
+    .container{
+        font-size: 25px !important;
+        width: 1440px !important;
+    }
+    
+    .show-content{
+        font-size: 25px !important;
     }
 }
