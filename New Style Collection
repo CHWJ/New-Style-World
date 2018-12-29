@@ -20,17 +20,23 @@
 }
 
 @-moz-document domain("book.douban.com") {
-    
     /*文本字号*/
-    .review-text{
-        font-size: 25px !important;
+    .review-content {
+        font-size: 30px !important;
+        font-family: 'Times New Roman',KaiTi;
     }
-    
+    body {
+        background-color: #e6f0e6;
+    }
+    .more-review-title {
+        background-color: #e6f0e6 !important;
+    }
+
     #wrapper {
-        width:90% !important;
+        width: 90% !important;
     }
-    .article{
-        width:75% !important;
+    .article {
+        width: 75% !important;
     }
 }
 
