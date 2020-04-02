@@ -1,6 +1,5 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
-/*
+@-moz-document domain("bbs.ngacn.cc") {
+    /*
 @-moz-document url-prefix(http), url-prefix(https) {
   /*改变页面底色
   body {
@@ -12,18 +11,18 @@
     }
 }
 */
-
-@-moz-document domain("bbs.ngacn.cc") {
-  .postcontent{
-    font-size:25px !important;
-  }
+    .postcontent {
+        font-size: 25px !important;
+    }
 }
 
 @-moz-document domain("book.douban.com") {
     /*文本字号*/
-    .review-content {
+    .review-content,
+    .review-content p,
+    .short-content {
         font-size: 30px !important;
-        font-family: 'Times New Roman',KaiTi;
+        font-family: Helvetica, Tahoma, 楷体;
     }
     body {
         background-color: #e6f0e6;
@@ -31,7 +30,6 @@
     .more-review-title {
         background-color: #e6f0e6 !important;
     }
-
     #wrapper {
         width: 90% !important;
     }
@@ -40,145 +38,170 @@
     }
 }
 
-@-moz-document domain("movie.douban.com") {    
+@-moz-document domain("movie.douban.com") {
     /*文本字号*/
-    .main-bd {
-        font-size: 25px !important;
+    /*movie.douban.com/review/ */
+    .review-content,
+    .review-content p,
+    #wrapper .comment-content span {
+        font-size: 30px !important;
+        font-family: Helvetica, Tahoma, 楷体;
+    }
+    /*movie.douban.com/review/ */
+    .short-content,
+    .comment {
+        font-size: 30px !important;
+        font-family: Helvetica, Tahoma, 楷体;
     }
     #wrapper {
-        width:90% !important;
+        width: 90% !important;
     }
-    .article{
-        width:75% !important;
+    .article {
+        width: 75% !important;
     }
 }
 
 @-moz-document url("http://www.cnblogs.com/") {
-    
-    #headline_block > ul:nth-child(1) > li {
-        font-size:20px !important;
+    #headline_block>ul:nth-child(1)>li {
+        font-size: 20px !important;
     }
-    
-     div.w_r > ul > li {
-        font-size:20px !important;
+    div.w_r>ul>li {
+        font-size: 20px !important;
     }
-
-    
     #side_right {
         width: 400px !important
     }
-    
-    div.w_r > ul {
+    div.w_r>ul {
         width: 380px !important
     }
-    
-    div.w_r:nth-child(1), div.w_r:nth-child(6),div.w_r:nth-child(9){
-        display:none
+    div.w_r:nth-child(1),
+    div.w_r:nth-child(6),
+    div.w_r:nth-child(9) {
+        display: none
     }
 }
 
 @-moz-document domain("cnblogs.com") {
     /*某些文章的内容字体*/
-    .MainCell{
-        font-size:25px !important;
+    .MainCell {
+        font-size: 25px !important;
     }
     /*某些文章的内容字体*/
-    #cnblogs_post_body p span{
-        font-size:25px !important;
+    #cnblogs_post_body p span {
+        font-size: 25px !important;
+        font-family: Helvetica, Tahoma, 楷体;
     }
-        
     #cnblogs_post_body p {
-        font-size:25px !important;
+        font-size: 25px !important;
+        font-family: Helvetica, Tahoma, 楷体;
+        line-height: 45px;
     }
-    .cnblogs_code pre,.cnblogs_code span {
-        font-size:16px !important;
+    .cnblogs_code pre,
+    .cnblogs_code span {
+        font-size: 16px !important;
     }
-    
     /*文章宽度*/
-    #topicList{
-        width:1280px !important;
+    #topicList {
+        width: 1280px !important;
     }
-    center{
-        margin-left:-550px !important;
+    center {
+        margin-left: -550px !important;
     }
 }
 
 @-moz-document domain("msdn.microsoft.com") {
-    #JelloExpander{
+    #JelloExpander {
         min-width: 1666px !important;
         margin-left: -800px;
     }
-    .MagazineStyle p{
-        font-size:22px !important;
-        line-height:28px !important;
+    .MagazineStyle p {
+        font-size: 22px !important;
+        line-height: 28px !important;
     }
-    .MagazineStyle ul li{
+    .MagazineStyle ul li {
         font-weight: bold;
-        font-size:22px !important;        
+        font-size: 22px !important;
         font-style: italic;
         color: #455481;
-        line-height:28px !important;
-    }
-}
-
-@-moz-document domain("weibo.com") {
-    
-    /*微博文本*/
-    .WB_text {
-        font-size:22px !important;
-        line-height:28px !important;
-    }
-}
-
-@-moz-document domain("tianya.cn") {
-    
-    /*字号*/
-    .bbs-content {
-        font-size:24px !important;
-    }
-    
-    /*页面宽度*/
-    #doc {
-        width:1366px !important;
+        line-height: 28px !important;
     }
 }
 
 @-moz-document domain("tingtaoge.com") {
-    body,.plc,.pls {
-        background-color:#93B468 !important;
+    body,
+    .plc,
+    .pls {
+        background-color: #93B468 !important;
     }
-    
     /*帖子字体大小*/
-    .t_f{
-        font-size:30px !important;
+    .t_f {
+        font-size: 30px !important;
     }
 }
 
 @-moz-document domain("zhihu.com") {
+    .AppHeader-inner,
+    .Topstory-container,
+    .QuestionHeader-content,
+    .Question-main {
+        width: 1520px;
+    }
+    .Topstory-mainColumn {
+        width: 1300px;
+    }
+    .Question-mainColumn {
+        width: 1290px;
+    }
+    .RichContent-inner {
+        max-height: unset !important;
+    }
+    .ContentItem-title,
+    .RichContent-inner {
+        font-size: 30px !important;
+        font-family: Helvetica, Tahoma, 楷体;
+    }
+    .Question-sideColumn {
+        width: 220px;
+    }
+    .QuestionHeader-detail {
+        width: 1270px;
+    }
+    .QuestionHeader-detail .RichText {
+        font-size: 25px !important;
+    }
+    .QuestionRichText--expandable.QuestionRichText--collapsed {
+        max-height: unset !important;
+    }
+}
 
-    .zu-main.zg-wrap{
-        width:1440px !important;
+@-moz-document domain("zhuanlan.zhihu.com") {
+    .TitleImage {
+        width: unset;
     }
-    
-    body{
-        font-size:25px !important;
+    .ColumnPageHeader-content,
+    .Post-NormalMain .Post-Header,
+    .Post-NormalMain>div,
+    .Post-NormalSub>div {
+        width: 1520px;
     }
-    
-    /*标题*/
-    .question_link {
-        font-size:25px !important;
+    .ztext p {
+        font-size: 30px !important;
+        font-family: Helvetica, Tahoma, 楷体;
+    }
+    .Post-SideActions {
+        left: unset;
     }
 }
 
 @-moz-document domain("book.zongheng.com") {
-    div.content p{
-        font-size:30px !important;
+    div.content p {
+        font-size: 30px !important;
     }
 }
 
-
 @-moz-document domain("v2ex.com") {
-    .reply_content, .topic_content {
+    .reply_content,
+    .topic_content {
         font-size: 25px !important;
     }
 }
@@ -189,53 +212,46 @@
         font-size: 20px !important;
     }
     /*帖子内容*/
-    .t_msgfont,font {
+    .t_msgfont,
+    font {
         font-size: 25px !important;
-    }    
+    }
 }
-
 
 @-moz-document domain("tieba.baidu.com") {
     /*背景颜色*/
-    .wrap1,.wrap2 {
-    background:none #AAA !important;
-}
-    
+    .wrap1,
+    .wrap2 {
+        background: none #AAA !important;
+    }
     .d_post_content {
-    line-height: 34px;
-    font-size: 24px;
-}
-    
-    .d_post_content_main{
-        width:1035px;
-        float:none;
+        line-height: 34px;
+        font-size: 24px;
     }
-    
-    #j_core_title_wrap{
-        width:1035px;
+    .d_post_content_main {
+        width: 1035px;
+        float: none;
     }
-    
+    #j_core_title_wrap {
+        width: 1035px;
+    }
     .tbui_aside_float_bar,
     #j_core_title_wrap,
     .core_title,
-    .right_section{
-        display:none !important;
+    .right_section {
+        display: none !important;
     }
-    
-    
-    .lzl_content_main{
-        color:#989898 !important;
+    .lzl_content_main {
+        color: #989898 !important;
     }
 }
 
-@-moz-document domain("jianshu.com")
-{
-    .container{
+@-moz-document domain("jianshu.com") {
+    .container {
         font-size: 25px !important;
         width: 1440px !important;
     }
-    
-    .show-content{
+    .show-content {
         font-size: 25px !important;
     }
 }
