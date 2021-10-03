@@ -4,7 +4,7 @@
 // @match       https://m.douban.com/group/*
 // @match       https://m.douban.com/movie/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @updateURL   https://raw.githubusercontent.com/CHWJ/New-Style-World/master/douban-mobile-web.user.js
 // @author      CHWJ
 // @description 2021/10/2 20:03:17
@@ -31,6 +31,7 @@ function hideApp(){
 
 function hideAd(){
   BussinessObj.hideElements.push("div.center:nth-child(7)");
+  BussinessObj.hideElements.push("body > div.page > div.card > div:nth-child(3)");
 }
 
 function startTimer(){
