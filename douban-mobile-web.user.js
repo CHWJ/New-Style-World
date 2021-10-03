@@ -4,19 +4,22 @@
 // @match       https://m.douban.com/group/*
 // @match       https://m.douban.com/movie/*
 // @grant       none
-// @version     1.0
-// @author      -
-// @description 2021/10/2 下午8:03:17
+// @version     1.0.1
+// @updateURL   https://raw.githubusercontent.com/CHWJ/New-Style-World/master/douban-mobile-web.user.js
+// @author      CHWJ
+// @description 2021/10/2 20:03:17
 // ==/UserScript==
 
 var BussinessObj = {
   hideElements : [],
-  timerToHide : null
+  timerToHide : null,
+  timerCount : 0
 };
 
 $(function(){
   hideApp();
   hideAd();
+  startTimer();
 });
 
 function hideApp(){
@@ -24,17 +27,22 @@ function hideApp(){
   //BussinessObj.hideElements.push(".oia-wrap");
   BussinessObj.hideElements.push(".subject-banner");
   BussinessObj.hideElements.push(".score-write");
-  
+}
+
+function hideAd(){
+  BussinessObj.hideElements.push("div.center:nth-child(7)");
+}
+
+function startTimer(){
   BussinessObj.timerToHide = window.setInterval(function(){
     timerToHideFunc();
   },1000);
 }
 
-function hideAd(){
-  $(".card > section:nth-child(6) > div:nth-child(1) > div:nth-child(5)").hide();
-}
-
 function timerToHideFunc(){
+  if(BussinessObj.timerCount >= 255){
+    BussinessObj.hideElements = [];
+  }
   if(BussinessObj.hideElements.length > 0){
     var arr = [];
     BussinessObj.hideElements.forEach(x=>{
@@ -48,5 +56,6 @@ function timerToHideFunc(){
     BussinessObj.hideElements = arr;
   }else{
     window.clearInterval(BussinessObj.timerToHide);
+    console.log("clear timerToHideFunc");
   }
 }
