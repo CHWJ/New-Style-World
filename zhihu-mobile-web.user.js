@@ -26,11 +26,17 @@ var BussinessObj = {
         display: none;
       }
     `);
-  }else if(/zhihu\.com\/question\//.test(window.location.href)){ // 
+  }else if(/zhihu\.com\/question\//.test(window.location.href)){ // 回答
     GM_addStyle(`
       .HotQuestions-bottomButton {
         display: none;
       }
     `);
+    window.setTimeout(function(){
+      var els = document.getElementsByClassName("ContentItem-expandButton");
+      els[0].parentNode.removeChild(els[0]);
+      document.getElementsByClassName("is-collapsed")[0].classList = "RichContent RichContent--unescapable";
+      document.getElementsByClassName("RichContent-inner")[0].style["maxHeight"]="unset";
+    },3000);
   }
 })();
