@@ -5,7 +5,7 @@
 // @grant        GM_addStyle
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @version     1.0.0
+// @version     1.0.1
 // @updateURL   https://raw.githubusercontent.com/CHWJ/New-Style-World/master/zhihu-mobile-web.user.js
 // @author      CHWJ
 // @description 2021/10/4 19:56:17
