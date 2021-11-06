@@ -7,10 +7,11 @@
 // @grant        GM_addStyle
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @version     1.0.3
+// @version     1.0.4
 // @updateURL   https://raw.githubusercontent.com/CHWJ/New-Style-World/master/douban-mobile-web.user.js
 // @author      CHWJ
 // @description 2021/10/2 20:03:17
+// @note        2021/11/06 11:37 1.0.4 预告片设置初始音量
 // ==/UserScript==
 
 var BussinessObj = {
@@ -54,6 +55,11 @@ $(function(){
     $(".note-content").css("max-height","unset");
     
     // todo: 请求桌面版本的 影评详情
+  }else if(/movie\/trailer\//.test(window.location.href)){ // 预告片
+    var els = document.getElementsByTagName("video");
+    $.each(els,function(i,el){
+      el.volume = 0.325;
+    });
   }
   
   if(window.location.href.indexOf("/movie/subject/")>-1){
